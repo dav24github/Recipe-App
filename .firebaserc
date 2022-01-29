@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "ang-projects-davide"
+  },
+  "targets": {
+    "ang-projects-davide": {
+      "hosting": {
+        "recipe": [
+          "recipe-ang-projects-davide"
+        ]
+      }
+    }
+  }
+}
