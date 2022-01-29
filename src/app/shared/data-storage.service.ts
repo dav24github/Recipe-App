@@ -19,7 +19,7 @@ export class DataStorageService {
     const recipes = this.recipeService.getRecipes();
     this.http
       .put(
-        'https://angular-projects-davidesossa-default-rtdb.firebaseio.com/recipes.json',
+        'https://ang-projects-davide-default-rtdb.firebaseio.com/recipes.json',
         recipes
       )
       .subscribe((response) => {
@@ -30,7 +30,7 @@ export class DataStorageService {
   fetchRecipes() {
     return this.http
       .get<Recipe[]>(
-        'https://angular-projects-davidesossa-default-rtdb.firebaseio.com/recipes.json'
+        'https://ang-projects-davide-default-rtdb.firebaseio.com/recipes.json'
       )
       .pipe(
         map((recipes) => {
